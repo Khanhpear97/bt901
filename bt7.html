@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let minute = +prompt('Nhập số phút gọi ');
+  if (minute <= 50) {
+    let money = 25000 + minute * 600;
+    alert(money);
+  } else if (minute <= 200) {
+    let money = 25000 + 50 * 600 + (minute - 50) * 400;
+    alert(money);
+  } else {
+    let money = 25000 + 50 * 600 + 150 * 400 + minute * 200;
+    alert(money);
+  }
+</script>
+</body>
+</html>
